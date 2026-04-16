@@ -1,0 +1,6 @@
+@BykeStoresGatewayAPI_HostAddress = http://localhost:5067
+
+GET {{BykeStoresGatewayAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

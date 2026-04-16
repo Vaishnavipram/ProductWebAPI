@@ -1,0 +1,41 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/brand/getAllBrands",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7256
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/brands",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "DownstreamHttpVersion": "2.0",
+      "DangerousAcceptAnyServerCertificate": false
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/brand/getBrandById/{brdId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7256
+        }
+      ],
+      "UpstreamPathTemplate": "/BykeStoresGateway/mybrand/{brdId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "RouteIsCaseSensitive": false,
+      "DownstreamHttpVersion": "2.0",
+      "DangerousAcceptAnyServerCertificate": false
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7088"
+  }
+}
+  
+
+
